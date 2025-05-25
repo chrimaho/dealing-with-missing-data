@@ -67,7 +67,7 @@ repos:
 
   # Find any outdated syntax and replace with modern equivalents
   - repo: https://github.com/asottile/pyupgrade
-    rev: "v3.19.1"
+    rev: "v3.20.0"
     hooks:
       - id: pyupgrade
         name: Upgrade Python features
@@ -95,7 +95,7 @@ repos:
 
   # Check uv configs
   - repo: https://github.com/astral-sh/uv-pre-commit
-    rev: "0.6.17"
+    rev: "0.7.8"
     hooks:
       - id: uv-lock
       - id: uv-sync
@@ -116,7 +116,7 @@ repos:
           - "--rcfile=pyproject.toml"
           - "-rn" # Only display messages
           - "-sn" # Don't display the score
-      
+
       # Check UV configs
       - id: uv-lock-sync
         name: uv lock & sync
